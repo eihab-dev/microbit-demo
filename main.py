@@ -3,7 +3,7 @@
 from microbit import *
 import power
 import random
-import music
+
 
 # Code in a 'while True:' loop repeats forever
 name="name"
@@ -32,7 +32,7 @@ while True:
            sleep(599)
            display.scroll("try harder",monospace=True ) 
           
-   if temperature() <= 30:
+   if temperature() >= 30:
        power.off()
 
 
